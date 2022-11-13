@@ -1,0 +1,211 @@
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-color: white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h4 {
+  font-size: 28px;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.smaller {
+  background-color: #FFFF33;
+  margin-right: auto;
+}
+
+.medium {
+  background-color: #FFFF33;
+  margin-right: auto;
+}
+
+.bigger {
+  background-color: #FFFF33;
+  margin-right: auto;
+}
+
+#footer {
+  font-family: Arial;
+  font-size: 9px;
+  font-style: italic;
+}
+
+body {
+  background-color: #e6e6fa;
+  padding: 0;
+  margins: 0;
+}
+
+#nav {
+  position: relative;
+  background-color: #ddd5f3;
+  font-family: 'Pacifico', cursive;
+  width: 100%;
+  height: 3rem;
+}
+
+#nav a {
+  font-size: 150%;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+#titleBanner {
+  position: relative;
+  background-image: none; /* url(https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80); */
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  background-position: center center;
+  background-size: cover;
+  background-color: #e6e6fa;
+}
+
+#titleBanner h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 500%;
+  color: #f8f8f8;
+  text-shadow: 4px 2px 3px #000000;
+}
+
+
+#titleBanner h1.tp {
+  font-size: 500%;
+}
+
+#titleBanner h1.yellow {
+  color: #ffdb58;
+  text-shadow: 8px 8px 8px #ffffff;
+}
+
+#titleBanner h4 {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  top: 1vw;
+  left: 50%;
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-size: 130%;
+  text-shadow: 4px 2px 3px #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#recipeColumns {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: block;
+  background-color: #e6e6fa;
+}
+
+#recipeColumns div {
+  float: left;
+  display: inline-block;
+  position: relative;
+  background-color: #e6e6fa;
+}
+
+#recipeColumns div#ingredients {
+  width: 33%;
+}
+
+#recipeColumns div#equipment {
+  width: 33%;
+}
+
+#recipeColumns div#directions {
+  width: 33%;
+}
+
+
+
+/*portrait layout*/
+
+@media screen and (orientation: portrait) {
+  #titleBanner {
+    height: 50vh;
+  }
+  #titleBanner h1 {
+    font-size: 50px
+  }
+  #recipeColumns { 
+    width: 100%;
+    height: auto;
+    display: block;
+  } 
+  #recipeColumns div {
+    float: none;
+    display: block;
+  }
+  #recipeColumns div#ingredients {
+    width: 100%;
+  }
+  #recipeColumns div#equipment {
+    width: 100%;
+  }
+  #recipeColumns div#directions {
+    width: 100%;
+  }
+  #recipeColumns li {
+    font-size: 15px;
+  }
+  #recipeColumns h4 {
+    font-size: 20px;
+  } 
+}
+
+  /*@media query max-width */
+@media screen and (max-width: 575px) { 
+  #titleBanner {
+    height: 50vh;
+  }
+  #titleBanner h1 {
+    font-size: 70px
+  }
+   #titleBanner h1 {
+    font-size: 70px
+  }
+  #recipeColumns { 
+    width: 100%;
+    height: auto;
+    display: block;
+  } 
+  #recipeColumns div {
+    float: none;
+    display: block;
+  }
+  #recipeColumns div#ingredients {
+    width: 100%;
+  }
+  #recipeColumns div#equipment {
+    width: 100%;
+  }
+  #recipeColumns div#directions {
+    width: 100%;
+  }
+  #recipeColumns li {
+    font-size: 15px;
+  }
+  #recipeColumns h4 {
+    font-size: 20px;
+  }
+  #recipeColumn h4 {
+    font-size: 20px;
+  }
+}
+
+ul,
+ol {
+  display: block;
+}
