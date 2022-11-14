@@ -119,7 +119,6 @@ $requestedList = $_GET["recipeList"];
 $requestedList = htmlspecialchars($requestedList);
 $requestedList = filter_var($requestedList, FILTER_SANITIZE_STRING);
 
-
 //use $requestedID  and $requestedList in multidimensional array an dsave to $requestedOutput
 $requestedOutput = $recipes[$requestedID][$requestedList];
 
@@ -133,6 +132,9 @@ if ($requestedOutput != null) {
 
 //output JSON back to AJAX request
 echo $requestedJSON;
+
+
+
 
 ?>
 
