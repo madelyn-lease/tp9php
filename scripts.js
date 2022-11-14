@@ -1,4 +1,4 @@
-  // JavaScript for TP6
+  // JavaScript for TP9
 
 //function to load a file from the URL "fromFile" into the object identified by "whereTo"
 function loadFileInto(recipeID, listName, whereTo) {
@@ -52,11 +52,11 @@ function loadFileInto(recipeID, listName, whereTo) {
 
 
 // new Recipe object
-function Recipe(recipeName, imgURL, contributorName, recipeID){
+function Recipe(recipeName, contributorName, imgURL, recipeID) {
   
   this.recipeName = recipeName;
-  this.imgSrc = imgURL;
   this.contributor = contributorName;
+  this.imgURL = imgURL;
   this.id = recipeID;
   
   this.displayRecipe = function() {
@@ -76,23 +76,23 @@ function Recipe(recipeName, imgURL, contributorName, recipeID){
 
 MonkeyBreadKabobs = new Recipe(
   "Monkey Bread Kabobs",    
-  "https://cdn.pixabay.com/photo/2013/09/16/16/03/banana-182852_960_720.jpg", 
   "Madelyn Lease",
+  "https://cdn.pixabay.com/photo/2013/09/16/16/03/banana-182852_960_720.jpg", 
   "monkeyBreadKabobs", 
 );
 
 
 FluffyFrenchToast = new Recipe(
-  "Fluffy French Toast", 
-  "https://images.unsplash.com/photo-1639108094328-2b94a49b1c2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80", 
+  "Fluffy French Toast",
   "Analysse Palomares",
+  "https://images.unsplash.com/photo-1639108094328-2b94a49b1c2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80", 
   "fluffyFrenchToast",
 );
 
 
 TresLechesCake = new Recipe(
   "Tres Leches Cake", 
-  "https://images.unsplash.com/photo-1602663491496-73f07481dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80", 
   "Eleno Rivera",
+  "https://images.unsplash.com/photo-1602663491496-73f07481dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80", 
   "tresLechesCake",
 );
