@@ -21,8 +21,7 @@ function loadFileInto(recipeID, listName, whereTo) {
         
 				console.log("AJAX response: " + this.responseText);
         
-        if (this.responseText != 0) {
-          
+        if (this.responseText != 0) { 
           responseArray = JSON.parse(this.responseText);
           
           responseHTML = "";
@@ -57,21 +56,21 @@ function Recipe(recipeName, contributorName, imgURL, recipeID) {
   this.recipeName = recipeName;
   this.contributor = contributorName;
   this.imgURL = imgURL;
-  this.recipeID = recipeID;
+  this.id = recipeID;
   
   this.displayRecipe = function() {
     
     layoutTitle = document.querySelectorAll("#titleBanner h1");
     layoutTitle[0].innerHTML = this.recipeName;
-    
+
     layoutContributor = document.querySelectorAll("#titleBanner h4");
     layoutContributor[0].innerHTML = "Contributed by " + this.contributor;
-   
-    document.querySelector("#titleBanner").style.backgroundImage = "url(" + this.imgURL +")";
+
+    document.getElementById("titleBanner").style.backgroundImage = "url(" + this.imgURL + ")";
     
-    loadFileInto(this.recipeID, "ingredients", "#ingredients ul");
-    loadFileInto(this.recipeID, "equipment", "#equipment ul");
-    loadFileInto(this.recipeID, "directions", "#directions ol");
+    loadFileInto(this.id, "ingredients", "#ingredients ul");
+    loadFileInto(this.id, "equipment", "#equipment ul");
+    loadFileInto(this.id, "directions", "#directions ol");
     
   }
   
